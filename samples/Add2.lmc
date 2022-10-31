@@ -4,19 +4,9 @@
 01  STO 97  ; store first number
 02  IN      ; input second number
 03  STO 98  ; store second number
-04  SUB 97
-05  BRP B   ; 98 > 97
-06  LDA 97   ; 97 > 98 so swap 97 and 98
-07  STO 96
-08  LDA 98
-09  STO 97
-10  LDA 96
-11  STO 98
-B : LDA 97
-    OUT
-    LDA 98
-    OUT
-    HLT
+04  ADD 97  ; add two numbers
+05  OUT
+06  HLT
 96  DAT     ; temp
 97  DAT     ; memory cell to store the first input number
 98  DAT     ; memory cell to store the second input number

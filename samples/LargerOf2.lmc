@@ -20,4 +20,3 @@
 96  DAT     ; temp
 97  DAT     ; memory cell to store the first input number
 98  DAT     ; memory cell to store the second input number
-99  DAT     ; memory cell to store the third input number

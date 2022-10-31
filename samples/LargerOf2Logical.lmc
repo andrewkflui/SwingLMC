@@ -1,0 +1,24 @@
+; to input two numbers from the user and output result in order
+
+00  IN      ; input first number
+01  STO 97  ; store first number
+02  IN      ; input second number
+03  STO 98  ; store second number
+04  SUB 97
+05  BRP B   ; 98 > 97
+06  LDA 97   ; 97 > 98 so swap 97 and 98
+07  STO 96
+08  LDA 98
+09  STO 97
+10  LDA 96
+11  STO 98
+B : LDA 97
+    OUT
+    LDA 98
+    OUT
+    HLT
+96  DAT     ; temp
+97  DAT     ; memory cell to store the first input number
+98  DAT     ; memory cell to store the second input number
+99  DAT     ; memory cell to store the third input number
+

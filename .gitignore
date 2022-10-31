@@ -1,0 +1,7 @@
+.form
+
+# VSCode
+/.vscode/
+
+# Additional
+.DS_Store
